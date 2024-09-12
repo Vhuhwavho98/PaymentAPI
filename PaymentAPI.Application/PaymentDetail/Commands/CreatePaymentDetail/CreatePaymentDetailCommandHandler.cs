@@ -29,7 +29,7 @@ namespace PaymentAPI.Application.PaymentDetail.Commands.CreatePaymentDetail
                 CardNumber = request.CardNumber,
                 CardOwnerName = request.CardOwnerName,
                 ExpiryDate = request.ExpiryDate,
-                PaymentDetailId = request.PaymentDetailId,
+                //PaymentDetailId = request.PaymentDetailId,
                 SecurityCode = request.SecurityCode,    
 
             };

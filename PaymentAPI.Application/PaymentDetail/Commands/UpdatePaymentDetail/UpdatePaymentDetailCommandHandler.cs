@@ -25,12 +25,12 @@ namespace PaymentAPI.Application.PaymentDetail.Commands.UpdatePaymentDetail
             {
                 CardNumber = request.CardNumber,
                 CardOwnerName = request.CardOwnerName,
-                PaymentDetailId = request.PaymentDetailId,
+                //PaymentDetailId = request.PaymentDetailId,
                 ExpiryDate = request.ExpiryDate,
                 SecurityCode = request.SecurityCode
             };
 
-            return await _paymentRepository.UpdateAsync(updatedData,request.Id);
+            return await _paymentRepository.UpdateAsync(updatedData,request.PaymentDetailId);
            
         }
     }

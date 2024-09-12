@@ -13,8 +13,6 @@ namespace PaymentAPI.Application.PaymentDetail.Queries
 {
     public class PaymentDetailVm : IMapForm<Domain.Entities.PaymentDetail>
     {
-        public int Id { get; set; }
-
         public int PaymentDetailId { get; set; }
         public String CardOwnerName { get; set; }
 

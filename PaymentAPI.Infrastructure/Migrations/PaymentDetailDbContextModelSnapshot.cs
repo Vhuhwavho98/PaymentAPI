@@ -41,9 +41,6 @@ namespace PaymentAPI.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(5)");
 
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
-
                     b.Property<string>("SecurityCode")
                         .IsRequired()
                         .HasColumnType("nvarchar(3)");

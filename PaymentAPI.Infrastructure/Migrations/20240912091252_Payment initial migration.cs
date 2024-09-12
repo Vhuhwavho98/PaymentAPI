@@ -5,7 +5,7 @@
 namespace PaymentAPI.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class Paymentinitialmigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,7 +16,6 @@ namespace PaymentAPI.Infrastructure.Migrations
                 {
                     PaymentDetailId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Id = table.Column<int>(type: "int", nullable: false),
                     CardOwnerName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     CardNumber = table.Column<string>(type: "nvarchar(16)", nullable: false),
                     ExpiryDate = table.Column<string>(type: "nvarchar(5)", nullable: false),

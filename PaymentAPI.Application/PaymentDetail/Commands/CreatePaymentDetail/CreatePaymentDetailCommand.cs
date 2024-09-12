@@ -11,7 +11,6 @@ namespace PaymentAPI.Application.PaymentDetail.Commands.CreatePaymentDetail
 {
     public class CreatePaymentDetailCommand : IRequest<PaymentDetailVm>
     {
-        public int PaymentDetailId { get; set; }
 
         public String CardOwnerName { get; set; }
 

@@ -11,8 +11,8 @@ using PaymentAPI.Infrastructure.Data;
 namespace PaymentAPI.Infrastructure.Migrations
 {
     [DbContext(typeof(PaymentDetailDbContext))]
-    [Migration("20240911211755_Initial Migration")]
-    partial class InitialMigration
+    [Migration("20240912091252_Payment initial migration")]
+    partial class Paymentinitialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,9 +43,6 @@ namespace PaymentAPI.Infrastructure.Migrations
                     b.Property<string>("ExpiryDate")
                         .IsRequired()
                         .HasColumnType("nvarchar(5)");
-
-                    b.Property<int>("Id")
-                        .HasColumnType("int");
 
                     b.Property<string>("SecurityCode")
                         .IsRequired()

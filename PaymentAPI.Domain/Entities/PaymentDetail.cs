@@ -10,8 +10,6 @@ namespace PaymentAPI.Domain.Entities
 {
     public class PaymentDetail
     {
-        public int Id { get; set; }
-
         [Key]
         public int PaymentDetailId { get; set; }
         public String CardOwnerName { get; set; }
