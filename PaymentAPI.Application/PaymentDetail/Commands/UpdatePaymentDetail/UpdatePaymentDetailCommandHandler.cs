@@ -25,7 +25,7 @@ namespace PaymentAPI.Application.PaymentDetail.Commands.UpdatePaymentDetail
             {
                 CardNumber = request.CardNumber,
                 CardOwnerName = request.CardOwnerName,
-                //PaymentDetailId = request.PaymentDetailId,
+                PaymentDetailId = request.PaymentDetailId,
                 ExpiryDate = request.ExpiryDate,
                 SecurityCode = request.SecurityCode
             };

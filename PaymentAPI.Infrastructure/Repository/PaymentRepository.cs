@@ -42,11 +42,11 @@ namespace PaymentAPI.Infrastructure.Repository
 
         public async Task<int> UpdateAsync(PaymentDetail paymentDetail, int id)
         {
-             await _paymentDetailDbContext.PaymentDetails.Where(model => model.PaymentDetailId == id).ExecuteUpdateAsync(setters =>
-            setters.SetProperty(m => m.CardOwnerName, paymentDetail.CardOwnerName)
-            .SetProperty(m => m.CardNumber, paymentDetail.CardNumber)
-            .SetProperty(m => m.ExpiryDate, paymentDetail.ExpiryDate)
-            .SetProperty(m => m.PaymentDetailId, paymentDetail.PaymentDetailId));
+            await _paymentDetailDbContext.PaymentDetails.Where(model => model.PaymentDetailId == id).ExecuteUpdateAsync(setters =>
+           setters.SetProperty(m => m.CardOwnerName, paymentDetail.CardOwnerName)
+           .SetProperty(m => m.CardNumber, paymentDetail.CardNumber)
+           .SetProperty(m => m.SecurityCode, paymentDetail.SecurityCode)
+           .SetProperty(m => m.ExpiryDate, paymentDetail.ExpiryDate));
             return 0;
         }
     }
